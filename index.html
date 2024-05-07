@@ -37,6 +37,8 @@
 
   modelViewerVariants.addEventListener('load', () => {
     const names = modelViewerVariants.availableVariants;
+    // Sort variants alphabetically
+    names.sort();
     for (const name of names) {
       const option = document.createElement('option');
       option.value = name;
