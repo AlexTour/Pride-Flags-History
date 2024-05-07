@@ -12,12 +12,12 @@ body {
   width: 100%;
   height: 100%;
   background-image: url('gradient-background.jpg');
+  background-size: cover;
 }
 
 model-viewer {
   width: 100%;
   height: 90%;
-  background-color: #ffffff;
 }
 
 
