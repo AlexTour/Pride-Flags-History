@@ -31,12 +31,42 @@ select {
   padding: 5px;
   font-size: 16px;
 }
+
 #info-panel {
-  background-color: #f0f0f0;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 768px) and (orientation: landscape) {
+    #info-panel {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30%;
+      max-width: 300px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #info-panel {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+
 #info-panel h2 {
   margin-top: 0;
 }
