@@ -8,18 +8,17 @@
   <link type="text/css" href="./styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <!-- <model-viewer> HTML element -->
+  <div class="title">Pride Flag History</div>
   <div class="grid-container">
     <model-viewer id="flag" src="pride-Flag-ATO.glb" ar ar-modes="scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"></model-viewer>
-    <div class="controls">
-      <label for="variant">Select flag:</label>
-      <select id="variant">
-        <option value="default">Default</option>
-      </select>
-    </div>
     <div id="info-panel">
       <h2>Flag Information</h2>
       <p id="variant-info">Select a flag to see more information.</p>
+    </div>
+    <div class="controls">
+      <label for="variant">Select flag:</label>
+      <select id="variant">
+      </select>
     </div>
   </div>
   <script>
@@ -68,8 +67,5 @@
     }
   }
   </script> 
-  <script src="script.js"></script>
-  <!-- Loads <model-viewer> for browsers: -->
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </body>
 </html>
