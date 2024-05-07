@@ -1,42 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>&lt;model-viewer&gt; template</title>
-    <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt; template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="./styles.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <!-- <model-viewer> HTML element -->
-    <model-viewer id="flag" src="pride-Flag-ATO.glb" ar ar-modes="scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button>
-      <div id="ar-prompt">
-          <img src="ar_hand_prompt.png">
-      </div>
-      <div class="controls">
-        <label for="variant">Select flag:</label>
-        <select id="variant">
-          <option value="default">Default</option>
-        </select>
-      </div>
-      <div id="info-panel">
-        <h2>Flag Information</h2>
-        <p id="variant-info">Select a flag to see more information.</p>
-      </div>
-  </model-viewer>
+<head>
+  <title>&lt;model-viewer&gt; template</title>
+  <meta charset="utf-8">
+  <meta name="description" content="&lt;model-viewer&gt; template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- <model-viewer> HTML element -->
+  <div class="grid-container">
+    <model-viewer id="flag" src="pride-Flag-ATO.glb" ar ar-modes="scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"></model-viewer>
+    <div id="info-panel">
+      <h2>Flag Information</h2>
+      <p id="variant-info">Select a flag to see more information.</p>
+    </div>
+  </div>
   <script>
   const modelViewerVariants = document.querySelector("model-viewer#flag");
   const select = document.querySelector('#variant');
   const variantInfo = document.querySelector('#variant-info');
 
   modelViewerVariants.addEventListener('load', () => {
-    const names = modelViewerVariants.availableVariants;
+    let names = modelViewerVariants.availableVariants;
     // Sort variants alphabetically
     names.sort();
     for (const name of names) {
@@ -47,9 +33,9 @@
     }
     // Adds a default option.
     const option = document.createElement('option');
-      option.value = 'default';
-      option.textContent = 'Default';
-      select.appendChild(option);
+    option.value = 'default';
+    option.textContent = 'Default';
+    select.appendChild(option);
   });
 
   select.addEventListener('input', (event) => {
@@ -58,28 +44,26 @@
   });
 
   function showVariantInfo(variant) {
-  // You can customize this function to provide specific information for each variant
-  switch (variant) {
-    case '1977-Gilbert Baker Pride Flag':
-      variantInfo.textContent = "Gilbert Pride Flag , the flag that started it all…  It was created in 1977 by Gilbert Baker, an artist, activist, and openly gay military veteran. Tasked by Harvey Milk, a historic figure in the fight for LGBTQ rights, to create a flag for the queer community, Baker created a rainbow flag with eight different colors.  Inspired by the classic song Over the Rainbow from the 1939 film The Wizard from Oz, Baker created a rainbow flag to represent LGBTQ folks. Each color in the flag also had a specific meaning. Hot Pink symbolizes sex. Red equals life. Orange symbolizes healing. Yellow stands for sunlight. Green represents nature. Turquoise equals magic & art. Indigo stands for serenity. Violet represents the spirit of LGBTQ people";
-      break;
-    case '1978-6 Color Pride Flag':
-      variantInfo.textContent = "The 6-Color Pride Flag is one of the most well-known and used LGBT flags throughout history. This flag includes the colours red, orange, yellow, green, indigo, and violet on it. Hot pink wasn´t included in the fabrication of these flags, because the fabric was hard to find. As the demand for the flag started to rise after the assassination of gay San Francisco City Supervisor Harvey Milk on November 27, 1978. In 1979, the flag was modified again. Aiming to decorate the streetlamps along the parade route with hundreds of rainbow banners, Gilbert Baker decided to split the motif in two with an even number of stripes flanking each lamp pole. To achieve this effect, he dropped the turquoise stripe that had been used in the seven-stripe flag. The result was the six-stripe version of the flag that would become the standard for future production.";
-      break;
-    case '2017-Philadelphia Pride Flag':
-      variantInfo.textContent = "The Philadelphia Pride Flag came out in response to the demand of more inclusivity across the LGBTQ+ community. The flag was launched in 2017 as part of the More Color More Pride Campaign in Philadelphia and was designed by a small Philly-based PR agency. The addition of black and brown stripes to the traditional pride flag symbolized people of color, who historically were not always included in aspects of the mainstream gay rights movement. Lena Waithe, an American actress, wore the Philadelphia Pride Flag as a cape at the 2018 Met Gala. She is a powerful advocate for black people within the entertainment industry and this flag spiked in popularity after she elevated its visibility.";
-      break;
-    case '2021-New Progress Pride Flag':
-      variantInfo.textContent = "Given the evolving nature of the LGBTQ+ community and society at large, the Progress Pride Flag integrates many of these flags into one. Thankfully, it has been redesigned to place a greater emphasis on “inclusion and progression.” Our community is such a huge umbrella of different kind of people and that is what makes us so special, that is what makes us so unique and that is what makes us so powerful. The modern pride flag now includes stripes to represent the experiences of people of color, as well as stripes to represent people who identify as transgender, gender nonconforming (GNC) and/or undefined. Daniel Quasar’s flag includes the colors of the trans flag, as well as black and brown stripes harkening back to 2017 Philadelphia Pride Flag, which sought to further represent the queer and trans identities of black and brown people. Those two stripes also represent those living with HIV/AIDS, people who have passed from the virus and the overall stigma surrounding HIV/AIDS that remains today. In 2021, the Progress Pride Flag was revised by Valentino Vecchietti of Intersex Equality Rights UK to incorporate the intersex flag. In the new design, the chevron of the Progress Flag includes a yellow triangle with a purple circle in the middle.";
-      break;
-    // Add cases for other variants as needed
-    default:
-      variantInfo.textContent = "Select a variant to see more information.";
+    switch (variant) {
+      case '1977-Gilbert Baker Pride Flag':
+        variantInfo.textContent = "Gilbert Pride Flag , the flag that started it all…  It was created in 1977 by Gilbert Baker, an artist, activist, and openly gay military veteran. Tasked by Harvey Milk, a historic figure in the fight for LGBTQ rights, to create a flag for the queer community, Baker created a rainbow flag with eight different colors.  Inspired by the classic song Over the Rainbow from the 1939 film The Wizard from Oz, Baker created a rainbow flag to represent LGBTQ folks. Each color in the flag also had a specific meaning. Hot Pink symbolizes sex. Red equals life. Orange symbolizes healing. Yellow stands for sunlight. Green represents nature. Turquoise equals magic & art. Indigo stands for serenity. Violet represents the spirit of LGBTQ people";
+        break;
+      case '1978-6 Color Pride Flag':
+        variantInfo.textContent = "The 6-Color Pride Flag is one of the most well-known and used LGBT flags throughout history. This flag includes the colours red, orange, yellow, green, indigo, and violet on it. Hot pink wasn´t included in the fabrication of these flags, because the fabric was hard to find. As the demand for the flag started to rise after the assassination of gay San Francisco City Supervisor Harvey Milk on November 27, 1978. In 1979, the flag was modified again. Aiming to decorate the streetlamps along the parade route with hundreds of rainbow banners, Gilbert Baker decided to split the motif in two with an even number of stripes flanking each lamp pole. To achieve this effect, he dropped the turquoise stripe that had been used in the seven-stripe flag. The result was the six-stripe version of the flag that would become the standard for future production.";
+        break;
+      case '2017-Philadelphia Pride Flag':
+        variantInfo.textContent = "The Philadelphia Pride Flag came out in response to the demand of more inclusivity across the LGBTQ+ community. The flag was launched in 2017 as part of the More Color More Pride Campaign in Philadelphia and was designed by a small Philly-based PR agency. The addition of black and brown stripes to the traditional pride flag symbolized people of color, who historically were not always included in aspects of the mainstream gay rights movement. Lena Waithe, an American actress, wore the Philadelphia Pride Flag as a cape at the 2018 Met Gala. She is a powerful advocate for black people within the entertainment industry and this flag spiked in popularity after she elevated its visibility.";
+        break;
+      case '2021-New Progress Pride Flag':
+        variantInfo.textContent = "Given the evolving nature of the LGBTQ+ community and society at large, the Progress Pride Flag integrates many of these flags into one. Thankfully, it has been redesigned to place a greater emphasis on “inclusion and progression.” Our community is such a huge umbrella of different kind of people and that is what makes us so special, that is what makes us so unique and that is what makes us so powerful. The modern pride flag now includes stripes to represent the experiences of people of color, as well as stripes to represent people who identify as transgender, gender nonconforming (GNC) and/or undefined. Daniel Quasar’s flag includes the colors of the trans flag, as well as black and brown stripes harkening back to 2017 Philadelphia Pride Flag, which sought to further represent the queer and trans identities of black and brown people. Those two stripes also represent those living with HIV/AIDS, people who have passed from the virus and the overall stigma surrounding HIV/AIDS that remains today. In 2021, the Progress Pride Flag was revised by Valentino Vecchietti of Intersex Equality Rights UK to incorporate the intersex flag. In the new design, the chevron of the Progress Flag includes a yellow triangle with a purple circle in the middle.";
+        break;
+      default:
+        variantInfo.textContent = "Select a variant to see more information.";
     }
   }
   </script> 
-    <script src="script.js"></script>
-    <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-  </body>
+  <script src="script.js"></script>
+  <!-- Loads <model-viewer> for browsers: -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</body>
 </html>
