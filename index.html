@@ -51,6 +51,7 @@
 
   select.addEventListener('input', (event) => {
     modelViewerVariants.variantName = event.target.value === 'default' ? null : event.target.value;
+    showVariantInfo(event.target.value);
   });
 
   function showVariantInfo(variant) {
