@@ -20,8 +20,15 @@
           <img src="ar_hand_prompt.png">
       </div>
       <div class="controls">
-      <div>Variant: <select id="variant"></select></div>
-    </div>
+        <label for="variant">Select Variant:</label>
+        <select id="variant">
+          <option value="default">Default</option>
+        </select>
+      </div>
+      <div id="info-panel">
+        <h2>Flag Information</h2>
+        <p id="variant-info">Select a flag to see more information.</p>
+      </div>
   </model-viewer>
   <script>
   const modelViewerVariants = document.querySelector("model-viewer#flag");
@@ -45,6 +52,21 @@
   select.addEventListener('input', (event) => {
     modelViewerVariants.variantName = event.target.value === 'default' ? null : event.target.value;
   });
+
+  function showVariantInfo(variant) {
+  // You can customize this function to provide specific information for each variant
+  switch (variant) {
+    case 'variant1':
+      variantInfo.textContent = "Variant 1: Description of variant 1.";
+      break;
+    case 'variant2':
+      variantInfo.textContent = "Variant 2: Description of variant 2.";
+      break;
+    // Add cases for other variants as needed
+    default:
+      variantInfo.textContent = "Select a variant to see more information.";
+    }
+  }
   </script> 
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
