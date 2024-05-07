@@ -38,6 +38,9 @@ select {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
+    font-family: superSunshine;
+    margin-top: 20px;
+    letter-spacing: 1px;
   }
 
   .grid-container {
