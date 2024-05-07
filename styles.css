@@ -25,9 +25,6 @@ model-viewer {
   height: 90%;
 }
 
-.controls {
-  margin-bottom: 10px;
-}
 label {
   font-weight: bold;
   margin-right: 5px;
@@ -37,34 +34,58 @@ select {
   font-size: 16px;
 }
 
-.grid-container {
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90% auto;
     gap: 10px; /* Adjust gap between model viewer and info panel */
     height: 100vh;
   }
 
   #flag {
-    grid-column: span 1;
-    grid-row: span 1;
     width: 100%;
-    height: 90%;
+    height: 100%;
   }
 
   #info-panel {
-    grid-column: span 1;
-    grid-row: span 1;
     background-color: #f0f0f0;
     padding: 10px;
     box-sizing: border-box;
     overflow-y: auto; /* Enable vertical scrolling if content exceeds panel height */
   }
 
+  .controls {
+    align-self: center; /* Align controls vertically in the middle */
+  }
+
   @media (max-width: 767px) {
     .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
+      grid-template-columns: 50%;
+      grid-template-rows: 50% auto;
+    }
+
+    #flag {
+      grid-row: span 1;
+      width: 100%;
+      height: 50%;
+    }
+
+    #info-panel {
+      grid-row: span 1;
+      width: 100%;
+      height: 50%;
+    }
+
+    .controls {
+      grid-row: span 1;
+      width: 100%;
+      align-self: center;
     }
   }
 
