@@ -13,6 +13,7 @@ body {
   height: 100%;
   background-image: url('gradient-background.jpg');
   background-size: 100% 100%;
+  font-family: sans-serif;
 }
 
 @font-face {
@@ -32,6 +33,12 @@ label {
 select {
   padding: 5px;
   font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.39);
 }
 
 .title {
@@ -72,6 +79,12 @@ select {
     width: 100%;
     height: auto;
     overflow: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
   }
 }
 
