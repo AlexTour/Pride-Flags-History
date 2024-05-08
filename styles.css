@@ -41,6 +41,9 @@ select {
     font-family: superSunshine;
     margin-top: 20px;
     letter-spacing: 1px;
+    background: -webkit-linear-gradient(#f00, #af08ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @media (max-width: 667px) {
