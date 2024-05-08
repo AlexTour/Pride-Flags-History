@@ -12,7 +12,7 @@ body {
   width: 100%;
   height: 100%;
   background-image: url('gradient-background.jpg');
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 @font-face {
