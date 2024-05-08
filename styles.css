@@ -48,7 +48,7 @@ select {
     /*margin-top: 20px;*/
     letter-spacing: 1px;
     position: relative;
-    left: 100px;
+    padding: 0px 0px 0px 100px;
     text-transform: uppercase;
   }
 
