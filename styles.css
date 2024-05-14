@@ -227,7 +227,7 @@ footer{
 }
 .socialIcons a i{
     font-size: 1em;
-    color: black;
+    /*color: black;*/
     opacity: 0,9;
 }
 /* Hover affect on social media icon */
@@ -246,7 +246,7 @@ footer{
     text-align: center;
 }
 .footerBottom p{
-    color: white;
+    color: blueviolet;
 }
 .designer{
     opacity: 1.0;
@@ -264,8 +264,24 @@ footer{
         text-align: center;
         margin: 10px;
     }
+
     .socialIcons a{
-        padding: 8px;
-        margin: 4px;
+      text-decoration: none;
+      margin: 0px 20px;
+    }
+
+    .socialIcons{
+      display: flex;
+      justify-content: center;
+    }
+
+    .footerBottom{
+      /*background-color: #000;*/
+      /*padding: 20px;*/
+      text-align: center;
+    }
+    
+    .footerBottom p{
+      color: blueviolet;
     }
 }
