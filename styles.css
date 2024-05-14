@@ -224,6 +224,7 @@ footer{
     /*background-color: white;*/
     margin: 0px 20px;
     /*border-radius: 50%;*/
+    color: blueviolet;
 }
 .socialIcons a i{
     font-size: 1em;
@@ -245,9 +246,11 @@ footer{
     /*padding: 20px;*/
     text-align: center;
 }
+
 .footerBottom p{
-    color: blueviolet;
+  color: blueviolet;
 }
+  
 .designer{
     opacity: 1.0;
     /*text-transform: uppercase;*/
@@ -255,6 +258,7 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
+  
 @media (max-width: 667px){
     .footerNav ul{
         flex-direction: column;
