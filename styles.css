@@ -55,7 +55,7 @@ select {
   @media (max-width: 667px) {
     .grid-container {
       display: grid;
-      grid-template-rows: 40% 10% auto;
+      grid-template-rows: 60% 10% auto;
       gap: 10px;
       height: 75%;
       padding: 0px 40px;
