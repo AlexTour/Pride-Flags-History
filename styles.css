@@ -301,5 +301,7 @@ select {
   }
 
   footer{
-    /*background-color: #111;*/
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
   }
