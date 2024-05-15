@@ -57,7 +57,7 @@ select {
       display: grid;
       grid-template-rows: 40% 10% auto;
       gap: 10px;
-      height: 80%;
+      height: 75%;
       padding: 0px 40px;
     }
 
