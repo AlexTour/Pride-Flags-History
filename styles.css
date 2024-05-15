@@ -114,10 +114,15 @@ select {
       opacity: 0,9;
     }
 
+    .footerContainer{
+      padding: 10px 0px 0px 0px;
+    }
+
     .footerBottom{
       /*background-color: #000;*/
       /*padding: 20px;*/
       text-align: center;
+      font-size: 12px;
     }
 
     .footerBottom p{
