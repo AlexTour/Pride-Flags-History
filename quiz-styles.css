@@ -1,8 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('gradient-background.jpg');
+  background-size: 100% 100%;
+  font-family: sans-serif;
 }
 
 .container {
