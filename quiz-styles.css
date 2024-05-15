@@ -30,6 +30,17 @@ h1, h2 {
     border: 1px solid rgba(255, 255, 255, 0.39);
 }
 
+.title {
+    /*text-align: center;
+    font-size: 24px;*/
+    margin-bottom: 20px;
+    /*margin-top: 20px;*/
+    /*letter-spacing: 1px;*/
+    position: relative;
+    padding: 0px 0px 0px 50px;
+    text-transform: uppercase;
+  }
+
 .options {
     margin-top: 10px;
 }
