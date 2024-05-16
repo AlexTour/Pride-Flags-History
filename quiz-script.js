@@ -148,19 +148,16 @@ const questionContainer = document.getElementById('question-container');
 
 function displayQuestion() {
     const currentQuestionData = quizData[currentQuestion];
-    questionContainer.innerHTML = `
-        <h2>Question ${currentQuestion + 1} of ${quizData.length}:</h2>
-        <p>${currentQuestionData.question}</p>
-        <div class="options">
-            ${currentQuestionData.answers.map(answer => `
-                <label class="radio">
-                    <input type="radio" name="answer" value="${answer}">
-                    ${answer}
-                </label>
-            `).join('')}
-        </div>
-    `;
+    questionNumberText.textContent = `Question ${currentQuestion + 1} of ${quizData.length}:`;
+    questionText.textContent = currentQuestionData.question;
+    optionsContainer.innerHTML = currentQuestionData.answers.map(answer => `
+        <label class="radio">
+            <input type="radio" name="answer" value="${answer}">
+            ${answer}
+        </label>
+    `).join('');
 }
+
 
 function checkAnswer() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
