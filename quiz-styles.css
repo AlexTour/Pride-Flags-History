@@ -5,6 +5,7 @@ body {
   height: 100%;
   background-image: url('gradient-background.jpg');
   background-size: 100% 100%;
+  background-attachment: fixed;
   font-family: sans-serif;
 }
 
