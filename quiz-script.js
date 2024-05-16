@@ -98,6 +98,17 @@ function displayQuestion() {
     `).join('');
 }
 
+function nextOrCheck() {
+    const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    if (selectedAnswer) {
+        // User has selected an answer, check it
+        checkAnswer();
+    } else {
+        // User hasn't selected an answer, move to next question
+        nextQuestion();
+    }
+}
+
 function checkAnswer() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (selectedAnswer) {
@@ -113,19 +124,38 @@ function checkAnswer() {
             score++;
         }
 
-        // Increment current question
-        currentQuestion++;
+        // Hide the question container
+        questionContainer.style.display = "none";
 
-        // Update progress bar
-        const progress = (currentQuestion / quizData.length) * 100;
-        progressBar.innerHTML = `<div class="progress-bar-fill" style="width: ${progress}%;"></div>`;
+        // Show the 'Next' button for showing next question
+        document.getElementById('next-button').style.display = "none";
+        document.getElementById('next-result-button').style.display = "block";
+    }
+}
 
-        // Check if quiz is complete
-        if (currentQuestion < quizData.length) {
-            displayQuestion();
-        } else {
-            showScore();
-        }
+function nextQuestion() {
+    // Show the question container
+    questionContainer.style.display = "block";
+
+    // Hide the result panel
+    resultPanel.style.display = "none";
+
+    // Hide the 'Next' button for showing next question
+    document.getElementById('next-button').style.display = "block";
+    document.getElementById('next-result-button').style.display = "none";
+
+    // Move to the next question
+    currentQuestion++;
+
+    // Check if there are more questions
+    if (currentQuestion < quizData.length) {
+        displayQuestion();
+    } else {
+        // Quiz completed, show final score
+        const scorePercentage = (score / quizData.length) * 100;
+        const scoreText = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
+        questionContainer.innerHTML += `<div id="score-panel"><h2>${scoreText}</h2></div>`;
+        document.getElementById('progress-bar').style.display = 'none';
     }
 }
 
