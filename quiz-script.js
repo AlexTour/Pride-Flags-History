@@ -144,91 +144,59 @@ const quizData = [
 let currentQuestion = 0;
 let score = 0;
 
-const questionNumberText = document.getElementById('question-number');
-const questionText = document.getElementById('question-text');
-const optionsContainer = document.getElementById('options');
-const resultPanel = document.getElementById('result-panel');
-const resultText = document.getElementById('result');
-const flagImage = document.getElementById('flag-image');
-const additionalInfo = document.getElementById('additional-info');
-const scorePanel = document.getElementById('score-panel');
-const scoreText = document.getElementById('score');
-const finalImage = document.getElementById('final-image');
-const progressBar = document.getElementById('progress-bar');
+const questionContainer = document.getElementById('question-container');
 
-// Function to display the current question
 function displayQuestion() {
     const currentQuestionData = quizData[currentQuestion];
-    questionNumberText.textContent = `Question ${currentQuestion + 1} of ${quizData.length}:`;
-    questionText.textContent = currentQuestionData.question;
-    optionsContainer.innerHTML = currentQuestionData.answers.map(answer => `
-        <label class="radio">
-            <input type="radio" name="answer" value="${answer}">
-            ${answer}
-        </label>
-    `).join('');
+    questionContainer.innerHTML = `
+        <h2>Question ${currentQuestion + 1} of ${quizData.length}:</h2>
+        <p>${currentQuestionData.question}</p>
+        <div class="options">
+            ${currentQuestionData.answers.map(answer => `
+                <label class="radio">
+                    <input type="radio" name="answer" value="${answer}">
+                    ${answer}
+                </label>
+            `).join('')}
+        </div>
+    `;
 }
 
-// Function to check the answer
 function checkAnswer() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (selectedAnswer) {
         const answer = selectedAnswer.value;
         const currentQuestionData = quizData[currentQuestion];
+        const isCorrect = answer === currentQuestionData.correctAnswer;
         
-        resultText.textContent = answer === currentQuestionData.correctAnswer ? "correct" : "incorrect";
-        flagImage.src = currentQuestionData.imageUrl;
-        additionalInfo.textContent = currentQuestionData.info;
-        resultPanel.style.display = "block";
+        questionContainer.innerHTML += `
+            <div class="results">
+                <p>Your answer is ${isCorrect ? 'correct' : 'incorrect'}.</p>
+                <img src="${currentQuestionData.imageUrl}" alt="Flag Image" class="flag-image">
+                <p class="additional-info">${currentQuestionData.info}</p>
+            </div>
+        `;
 
-        if (answer === currentQuestionData.correctAnswer) {
+        if (isCorrect) {
             score++;
-        }
-
-        // Increment current question
-        currentQuestion++;
-
-        // Update progress bar
-        const progress = (currentQuestion / quizData.length) * 100;
-        progressBar.innerHTML = `<div class="progress-bar-fill" style="width: ${progress}%;"></div>`;
-
-        // Check if quiz is complete
-        if (currentQuestion < quizData.length) {
-            displayQuestion();
-        } else {
-            showScore();
         }
     }
 }
 
-// Function to display final score
-function showScore() {
-    resultPanel.style.display = "none";
-    scorePanel.style.display = "block";
-    scoreText.textContent = `Your score: ${score} out of ${quizData.length}`;
-    // Set final image
-    // finalImage.src = "final-image.jpg";
-}
+function nextQuestion() {
+    checkAnswer();
 
-// Function to restart the quiz
-function restartQuiz() {
-    currentQuestion = 0;
-    score = 0;
-    resultPanel.style.display = "none";
-    scorePanel.style.display = "none";
-    progressBar.innerHTML = "";
-    displayQuestion();
+    if (currentQuestion < quizData.length - 1) {
+        currentQuestion++;
+        displayQuestion();
+    } else {
+        // Quiz completed, show final score
+        const scorePercentage = (score / quizData.length) * 100;
+        const scoreText = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
+        questionContainer.innerHTML += `<div id="score-panel"><h2>${scoreText}</h2></div>`;
+        document.getElementById('progress-bar').style.display = 'none';
+    }
 }
 
 // Initial display
 displayQuestion();
-
-// Function to proceed to the next question
-function nextQuestion() {
-    resultPanel.style.display = "none";
-    if (currentQuestion < quizData.length) {
-        displayQuestion();
-    } else {
-        showScore();
-    }
-}
