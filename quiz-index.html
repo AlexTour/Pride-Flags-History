@@ -16,7 +16,8 @@
         <div class="quiz-question" id="questionContainer">
             <h2 id="question-number">Question 1 of ${quizData.length}:</h2>
             <p id="question-text"></p>
-            <div class="options" id="options"></div>        
+            <div class="options" id="options"></div>
+            <button id="next-result-button" style="display: none;" onclick="checkAnswer()">Next</button>
         </div>           
         <div class="results" id="result-panel" style="display: none;">
             <div class="result-content">
@@ -24,10 +25,9 @@
                 <p class="result-text">Your answer is <span id="result"></span>.</p>
                 <img src="#" alt="Flag Image" class="flag-image" id="flag-image" style="width: 100%;">
                 <p class="additional-info" id="additional-info"></p>
+                <button id="next-button" onclick="nextQuestion()">Next</button>     
             </div>
         </div>
-        <button id="next-button" onclick="nextQuestion()">Next</button>     
-        <button id="next-result-button" style="display: none;" onclick="checkAnswer()">Next</button>
         <div id="score-panel" style="display: none;">
             <h2>Your Score:</h2>
             <p id="score"></p>
