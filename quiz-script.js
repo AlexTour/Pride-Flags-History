@@ -145,6 +145,18 @@ let currentQuestion = 0;
 let score = 0;
 
 const questionContainer = document.getElementById('question-container');
+const questionNumberText = document.getElementById('question-number');
+const questionText = document.getElementById('question-text');
+const optionsContainer = document.getElementById('options');
+const resultPanel = document.getElementById('result-panel');
+const resultText = document.getElementById('result');
+const flagImage = document.getElementById('flag-image');
+const additionalInfo = document.getElementById('additional-info');
+const scorePanel = document.getElementById('score-panel');
+const scoreText = document.getElementById('score');
+const finalImage = document.getElementById('final-image');
+const progressBar = document.getElementById('progress-bar');
+
 
 function displayQuestion() {
     const currentQuestionData = quizData[currentQuestion];
