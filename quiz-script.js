@@ -129,8 +129,8 @@ function checkAnswer() {
         questionContainer.style.display = "none";
 
         // Show the 'Next' button for showing next question
-        document.getElementById('next-button').style.display = "none";
-        document.getElementById('next-result-button').style.display = "block";
+        document.getElementById('next-button').style.display = "block";
+        document.getElementById('next-result-button').style.display = "none";
     }
 }
 
@@ -142,8 +142,8 @@ function nextQuestion() {
     resultPanel.style.display = "none";
 
     // Hide the 'Next' button for showing next question
-    document.getElementById('next-button').style.display = "block";
-    document.getElementById('next-result-button').style.display = "none";
+    document.getElementById('next-button').style.display = "none";
+    document.getElementById('next-result-button').style.display = "block";
 
     // Move to the next question
     currentQuestion++;
