@@ -79,4 +79,95 @@ button:hover {
         max-width: 100%;
         padding: 10px;
     }
+
+      .socialIcons a{
+      text-decoration: none;
+      margin: 0px 20px;
+    }
+
+    .socialIcons{
+      display: flex;
+      justify-content: center;
+    }
+
+    .socialIcons a{
+      text-decoration: none;
+      /*padding:  10px;*/
+      /*background-color: white;*/
+      margin: 0px 20px;
+      /*border-radius: 50%;*/
+      color: blueviolet;
+    }
+
+    .socialIcons a i{
+      font-size: 1em;
+      /*color: black;*/
+      opacity: 0,9;
+    }
+
+    .footerContainer{
+      padding: 10px 0px 0px 0px;
+    }
+
+    .footerBottom{
+      /*background-color: #000;*/
+      /*padding: 20px;*/
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .footerBottom p{
+      color: blueviolet;
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .footerContainer{
+      /*width: 100%;*/
+      /*padding: 70px 30px 20px ;*/
+    }
+
+    .socialIcons{
+      display: flex;
+      justify-content: center;
+    }
+
+    .socialIcons a{
+      text-decoration: none;
+      /*padding:  10px;*/
+      /*background-color: white;*/
+      margin: 0px 20px;
+      /*border-radius: 50%;*/
+      color: blueviolet;
+    }
+
+    .socialIcons a i{
+      font-size: 1em;
+      /*color: black;*/
+      opacity: 0,9;
+    }
+
+    .footerBottom{
+      /*background-color: #000;*/
+      /*padding: 20px;*/
+      text-align: center;
+    }
+
+    .footerBottom p{
+      color: blueviolet;
+    }
+
+    .designer{
+      opacity: 1.0;
+      /*text-transform: uppercase;*/
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin: 0px 5px;
+    }
+  }
+
+footer{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
 }
