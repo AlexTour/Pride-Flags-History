@@ -78,6 +78,7 @@ const questionNumberText = document.getElementById('question-number');
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options');
 const resultPanel = document.getElementById('result-panel');
+const questionContainer = document.getElementById('questionContainer');
 const resultText = document.getElementById('result');
 const flagImage = document.getElementById('flag-image');
 const additionalInfo = document.getElementById('additional-info');
