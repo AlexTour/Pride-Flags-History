@@ -170,24 +170,34 @@ function displayQuestion() {
     `).join('');
 }
 
-
+// Function to check the answer
 function checkAnswer() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (selectedAnswer) {
         const answer = selectedAnswer.value;
         const currentQuestionData = quizData[currentQuestion];
-        const isCorrect = answer === currentQuestionData.correctAnswer;
         
-        questionContainer.innerHTML += `
-            <div class="results">
-                <p>Your answer is ${isCorrect ? 'correct' : 'incorrect'}.</p>
-                <img src="${currentQuestionData.imageUrl}" alt="Flag Image" class="flag-image">
-                <p class="additional-info">${currentQuestionData.info}</p>
-            </div>
-        `;
+        resultText.textContent = answer === currentQuestionData.correctAnswer ? "correct" : "incorrect";
+        flagImage.src = currentQuestionData.imageUrl;
+        additionalInfo.textContent = currentQuestionData.info;
+        resultPanel.style.display = "block";
 
-        if (isCorrect) {
+        if (answer === currentQuestionData.correctAnswer) {
             score++;
+        }
+
+        // Increment current question
+        currentQuestion++;
+
+        // Update progress bar
+        const progress = (currentQuestion / quizData.length) * 100;
+        progressBar.innerHTML = `<div class="progress-bar-fill" style="width: ${progress}%;"></div>`;
+
+        // Check if quiz is complete
+        if (currentQuestion < quizData.length) {
+            displayQuestion();
+        } else {
+            showScore();
         }
     }
 }
