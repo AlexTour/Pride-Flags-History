@@ -74,7 +74,6 @@ const quizData = [
 let currentQuestion = 0;
 let score = 0;
 
-const questionContainer = document.getElementById('question-container');
 const questionNumberText = document.getElementById('question-number');
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options');
@@ -86,7 +85,6 @@ const scorePanel = document.getElementById('score-panel');
 const scoreText = document.getElementById('score');
 const finalImage = document.getElementById('final-image');
 const progressBar = document.getElementById('progress-bar');
-
 
 function displayQuestion() {
     const currentQuestionData = quizData[currentQuestion];
@@ -100,7 +98,6 @@ function displayQuestion() {
     `).join('');
 }
 
-// Function to check the answer
 function checkAnswer() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (selectedAnswer) {
@@ -132,19 +129,20 @@ function checkAnswer() {
     }
 }
 
-function nextQuestion() {
-    checkAnswer();
+function showScore() {
+    const scorePercentage = (score / quizData.length) * 100;
+    scoreText.textContent = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
+    scorePanel.style.display = "block";
+    progressBar.style.display = "none";
+}
 
-    if (currentQuestion < quizData.length - 1) {
-        currentQuestion++;
-        displayQuestion();
-    } else {
-        // Quiz completed, show final score
-        const scorePercentage = (score / quizData.length) * 100;
-        const scoreText = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
-        questionContainer.innerHTML += `<div id="score-panel"><h2>${scoreText}</h2></div>`;
-        document.getElementById('progress-bar').style.display = 'none';
-    }
+function restartQuiz() {
+    currentQuestion = 0;
+    score = 0;
+    resultPanel.style.display = "none";
+    scorePanel.style.display = "none";
+    progressBar.style.display = "block";
+    displayQuestion();
 }
 
 // Initial display
