@@ -135,16 +135,6 @@ function checkAnswer() {
 }
 
 function nextQuestion() {
-    // Show the question container
-    questionContainer.style.display = "block";
-
-    // Hide the result panel
-    resultPanel.style.display = "none";
-
-    // Hide the 'Next' button for showing next question
-    document.getElementById('next-button').style.display = "none";
-    document.getElementById('next-result-button').style.display = "block";
-
     // Move to the next question
     currentQuestion++;
 
@@ -155,9 +145,22 @@ function nextQuestion() {
         // Quiz completed, show final score
         const scorePercentage = (score / quizData.length) * 100;
         const scoreText = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
-        questionContainer.innerHTML += `<div id="score-panel"><h2>${scoreText}</h2></div>`;
+        questionContainer.innerHTML = `<div id="score-panel"><h2>${scoreText}</h2><img src="final-image.jpg" alt="Final Image"></div>`;
         document.getElementById('progress-bar').style.display = 'none';
+        
+        // Show play again button
+        document.getElementById('play-again-button').style.display = 'block';
     }
+
+    // Show the question container
+    questionContainer.style.display = "block";
+
+    // Hide the result panel
+    resultPanel.style.display = "none";
+
+    // Hide the 'Next' button for showing next question
+    document.getElementById('next-button').style.display = "block";
+    document.getElementById('next-result-button').style.display = "none";
 }
 
 function showScore() {
@@ -168,13 +171,23 @@ function showScore() {
 }
 
 function restartQuiz() {
+    // Reset variables
     currentQuestion = 0;
     score = 0;
-    resultPanel.style.display = "none";
-    scorePanel.style.display = "none";
-    progressBar.style.display = "block";
+
+    // Show the first question
     displayQuestion();
+
+    // Hide the score panel
+    document.getElementById('score-panel').style.display = 'none';
+
+    // Show the progress bar
+    document.getElementById('progress-bar').style.display = 'block';
+
+    // Hide the play again button
+    document.getElementById('play-again-button').style.display = 'none';
 }
+
 
 // Initial display
 displayQuestion();
