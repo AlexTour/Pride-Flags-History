@@ -148,7 +148,7 @@ function showScore() {
     const scorePercentage = (score / quizData.length) * 100;
 
     // Set the text of the score paragraph element
-    const scoreMessage = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
+    const scoreMessage = `You scored ${score} out of ${quizData.length} answers. According to my calculations that is (${scorePercentage.toFixed(2)}%). Here, you receive a happy pride dog as a gift:`;
     scoreText.textContent = scoreMessage;
 
     // Show the score panel
