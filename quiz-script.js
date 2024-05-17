@@ -150,6 +150,9 @@ function nextQuestion() {
         
         // Show play again button
         document.getElementById('play-again-button').style.display = 'block';
+        
+        // Reset currentQuestion to 0 for the next quiz
+        currentQuestion = 0;
     }
 
     // Show the question container
