@@ -150,16 +150,15 @@ function nextQuestion() {
 
         // Hide the result panel
         resultPanel.style.display = "none";
-
-        // Hide the 'Next' button for showing next question
-        nextButton.style.display = "none";
-        nextResultButton.style.display = "block";
     } else {
-        nextButton.style.display = "none";
-        nextResultButton.style.display = "none";
+
         // Quiz completed, show final score
         showScore();
     }
+    
+    // Hide the 'Next' button for showing next question
+    nextButton.style.display = "none";
+    nextResultButton.style.display = "block";
 }
 
 function showScore() {
