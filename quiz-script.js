@@ -145,7 +145,7 @@ function nextQuestion() {
         // Quiz completed, show final score
         const scorePercentage = (score / quizData.length) * 100;
         const scoreText = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
-        questionContainer.innerHTML = `<div id="score-panel"><h2>${scoreText}</h2><img src="final-image.jpg" alt="Final Image"></div>`;
+        questionContainer.innerHTML += `<div id="score-panel"><h2>${scoreText}</h2><img src="final-image.jpg" alt="Final Image"></div>`;
         document.getElementById('progress-bar').style.display = 'none';
         
         // Show play again button
