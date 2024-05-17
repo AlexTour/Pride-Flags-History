@@ -72,7 +72,7 @@ const playAgainButton = document.getElementById('play-again-button');
 
 function displayQuestion() {
     const currentQuestionData = quizData[currentQuestion];
-    questionNumberText.textContent = `Question ${currentQuestion + 1} of ${quizData.length}:`;
+    questionNumberText.textContent = `Question ${currentQuestion + 1}/${quizData.length}`;
     questionText.textContent = currentQuestionData.question;
     optionsContainer.innerHTML = currentQuestionData.answers.map(answer => `
         <label class="radio">
