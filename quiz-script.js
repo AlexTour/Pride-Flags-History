@@ -3,7 +3,7 @@ const quizData = [
         question: "How many colors are there in the original rainbow flag?",
         answers: ["Six", "Seven", "Eight"],
         correctAnswer: "Six",
-        imageUrl: "Intersex-inclusive-pride-flag.jpg",
+        imageUrl: "Color-Pride-Flag.jpg",
         info: "The original rainbow flag consists of six colors: red, orange, yellow, green, blue, and violet, symbolizing the diversity of the LGBTQ+ community."
     },
     {
