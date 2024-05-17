@@ -11,7 +11,7 @@ const quizData = [
         answers: ["Progress Pride Flag", "Bisexual Pride Flag", "Non-Binary Pride Flag"],
         correctAnswer: "Bisexual Pride Flag",
         imageUrl: "bisexual.jpg",
-        info: "The Bisexual Pride Flag features five horizontal stripes in shades of pink, purple, and blue. The pink stripe represents same-sex attraction, the blue stripe represents opposite-sex attraction, and the purple stripe represents the attraction to both sexes, symbolizing bisexuality."
+        info: "The Bisexual Pride Flag features three horizontal stripes in shades of pink, purple, and blue. Blue stripe represents opposite-sex attraction, pink stripe represents same-sex attraction and the purple stripe represents the attraction to both sexes, symbolizing bisexuality."
     },
     {
         question: "Which pride flag consists of nine horizontal stripes in pink, purple, blue, green, yellow, orange, red, brown, and black?",
@@ -42,18 +42,18 @@ const quizData = [
         info: "The Asexual Pride Flag features a black background with a large gray ace (a symbol of asexuality) in the center, surrounded by four horizontal stripes. The top stripe is purple, representing community; the second stripe is gray, representing gray-asexuality and demisexuality; the third stripe is white, representing sexuality; and the bottom stripe is black, representing asexuality."
     },
     {
-        question: "Which pride flag consists of seven horizontal stripes in pink, blue, and lavender?",
+        question: "Which pride flag consists of three horizontal stripes in pink, blue, and lavender?",
         answers: ["Pansexual Pride Flag", "Genderqueer Pride Flag", "Progress Pride Flag"],
         correctAnswer: "Pansexual Pride Flag",
         imageUrl: "pansexual.jpg",
-        info: "The Pansexual Pride Flag consists of seven horizontal stripes in pink, blue, and lavender. The pink stripe represents attraction to females, the blue stripe represents attraction to males, and the lavender stripe represents attraction to individuals regardless of gender or sex."
+        info: "The Pansexual Pride Flag consists of three horizontal stripes in pink, blue, and lavender. The pink stripe represents attraction to females, the blue stripe represents attraction to males, and the lavender stripe represents attraction to individuals regardless of gender or sex."
     },
     {
         question: "Which pride flag features horizontal stripes in pink, white, and cyan?",
         answers: ["Non-Binary Pride Flag", "Transgender Pride Flag", "Intersex Pride Flag"],
         correctAnswer: "Transgender Pride Flag",
         imageUrl: "transgender.jpg",
-        info: "The Transgender Pride Flag features horizontal stripes in pink, white, and cyan. The pink stripe represents femininity, the blue stripe represents masculinity, and the white stripe represents non-binary or intersex individuals."
+        info: "The Transgender Pride Flag features pink, white, and cyan horizontal stripes. The pink stripe represents femininity, the blue stripe represents masculinity, and the white stripe represents non-binary or intersex individuals."
     },
     {
         question: "Which pride flag is designed with horizontal stripes in shades of brown and black, with a pink stripe at the top?",
