@@ -108,6 +108,21 @@ button:hover {
   filter: drop-shadow(0 0 0.5rem grey);
 }
 
+#final-image {
+  width: 150px; 
+  margin: auto; 
+  display: flex;
+  animation-name: shake;
+  animation-duration: 0.25s;
+  animation-iteration-count: 3;
+}
+
+@keyframes shake {
+  0%   {background-color:red; left:0px; top:0px;}
+  50%  {background-color:blue; left:20px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
 @media only screen and (max-width: 667px) {
     .container {
         max-width: 100%;
