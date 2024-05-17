@@ -4,7 +4,7 @@ const quizData = [
         answers: ["Six", "Eight", "Twelve"],
         correctAnswer: "Eight",
         imageUrl: "Gilbert-1.jpg",
-        info: "The original rainbow flag consists of six colours: red, orange, yellow, green, blue, and violet, symbolizing the diversity of the LGBTQ+ community."
+        info: "Baker created the rainbow flag inspired by the classic song Over the Rainbow from the 1939 film The Wizard of Oz. Each colour in the flag has a specific meaning. Hot Pink symbolizes sex. Red equals life. Orange symbolizes healing. Yellow stands for sunlight. Green represents nature. Turquoise equals magic & art. Indigo stands for serenity. Violet represents the spirit of LGBTQ people"
     },
     {
         question: "How many colours are there in the original rainbow flag?",
