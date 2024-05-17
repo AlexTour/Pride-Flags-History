@@ -1,31 +1,31 @@
 const quizData = [
     {
         question: "The original Rainbow Pride Flag, designed by Gilbert Baker in 1978, had how many colors?",
-        answers: ["Four", "Eight", "Twelve"],
+        answers: ["Six", "Eight", "Twelve"],
         correctAnswer: "Eight",
         imageUrl: "Gilbert-1.jpg",
-        info: "The original rainbow flag consists of six colors: red, orange, yellow, green, blue, and violet, symbolizing the diversity of the LGBTQ+ community."
+        info: "The original rainbow flag consists of six colours: red, orange, yellow, green, blue, and violet, symbolizing the diversity of the LGBTQ+ community."
     },
     {
-        question: "How many colors are there in the original rainbow flag?",
+        question: "How many colours are there in the original rainbow flag?",
         answers: ["Six", "Seven", "Eight"],
         correctAnswer: "Six",
         imageUrl: "Color-Pride-Flag.jpg",
-        info: "The original rainbow flag consists of six colors: red, orange, yellow, green, blue, and violet, symbolizing the diversity of the LGBTQ+ community."
+        info: "The 6-Color Pride Flag is one of the most well-known and used LGBT flags throughout history. Hot pink wasn´t included because the fabric was hard to find. In 1979, Gilbert Baker dropped the turquoise stripe, creating the most well-known pride flag."
     },
     {
         question: "Which pride flag features three horizontal stripes in  pink, purple, and blue?",
         answers: ["Pansexual Pride Flag", "Bisexual Pride Flag", "Asexual Pride Flag"],
         correctAnswer: "Bisexual Pride Flag",
         imageUrl: "bisexual.jpg",
-        info: "The Bisexual Pride Flag features three horizontal stripes in shades of pink, purple, and blue. Blue stripe represents opposite-sex attraction, pink stripe represents same-sex attraction and the purple stripe represents the attraction to both sexes, symbolizing bisexuality."
+        info: "The Bisexual Pride Flag features three horizontal stripes in shades of blue, purple and pink. Blue represents opposite-sex attraction, pink represents same-sex attraction and purple represents the attraction to both sexes, symbolizing bisexuality."
     },
     {
         question: "Which pride flag consists of nine horizontal stripes in pink, purple, blue, green, yellow, orange, red, brown, and black?",
         answers: ["Non-Binary Pride Flag", "Progress Pride Flag", "Pansexual Pride Flag"],
         correctAnswer: "Progress Pride Flag",
         imageUrl: "Intersex-inclusive-pride-flag.jpg",
-        info: "The Progress Pride Flag is an updated version of the traditional rainbow flag. It features nine horizontal stripes in the colors pink, red, orange, yellow, green, blue, purple, black, and brown. The additional black and brown stripes are meant to represent marginalized LGBTQ+ communities of color and those living with HIV/AIDS, while the white, pink, and blue stripes represent transgender individuals, non-binary individuals, and those who are intersex."
+        info: "The Progress Pride Flag is an updated version of the traditional rainbow flag. It features nine horizontal stripes in pink, red, orange, yellow, green, blue, purple, black, and brown. The additional black and brown stripes are meant to represent marginalized LGBTQ+ communities of color and those living with HIV/AIDS, while the white, pink, and blue stripes represent transgender individuals, non-binary individuals, and those who are intersex."
     },
     {
         question: "Which pride flag consists of three horizontal stripes in pink, blue, and yellow?",
@@ -39,7 +39,7 @@ const quizData = [
         answers: ["Non-Binary Pride Flag", "Transgender Pride Flag", "Intersex Pride Flag"],
         correctAnswer: "Transgender Pride Flag",
         imageUrl: "transgender.jpg",
-        info: "The Transgender Pride Flag features pink, white, and cyan horizontal stripes. The pink stripe represents femininity, the blue stripe represents masculinity, and the white stripe represents non-binary or intersex individuals."
+        info: "The Transgender Pride Flag features pink, white, and cyan horizontal stripes. Pink  represents femininity, blue  represents masculinity and white  represents non-binary or intersex individuals."
     },
     {
         question: "Which pride flag is designed with horizontal stripes in pink, purple, blue, green, yellow, orange, and red?",
