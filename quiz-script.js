@@ -186,6 +186,10 @@ function restartQuiz() {
 
     // Hide the play again button
     document.getElementById('play-again-button').style.display = 'none';
+
+    // Reset the container content
+    questionContainer.style.display = 'block';
+    resultPanel.style.display = 'none';
 }
 
 
