@@ -86,6 +86,10 @@ const scorePanel = document.getElementById('score-panel');
 const scoreText = document.getElementById('score');
 const finalImage = document.getElementById('final-image');
 const progressBar = document.getElementById('progress-bar');
+const nextButton = document.getElementById('next-button');
+const nextResultButton = document.getElementById('next-result-button');
+const playAgainButton = document.getElementById('play-again-button');
+
 
 function displayQuestion() {
     const currentQuestionData = quizData[currentQuestion];
@@ -129,8 +133,8 @@ function checkAnswer() {
         questionContainer.style.display = "none";
 
         // Show the 'Next' button for showing next question
-        document.getElementById('next-button').style.display = "block";
-        document.getElementById('next-result-button').style.display = "none";
+        nextButton.style.display = "block";
+        nextResultButton.style.display = "none";
     }
 }
 
@@ -153,27 +157,30 @@ function nextQuestion() {
     resultPanel.style.display = "none";
 
     // Hide the 'Next' button for showing next question
-    document.getElementById('next-button').style.display = "none";
-    document.getElementById('next-result-button').style.display = "block";
+    nextButton.style.display = "none";
+    nextResultButton.style.display = "block";
 }
 
 function showScore() {
+     // Hide the question container
+    questionContainer.style.display = "none";
+    
     // Calculate the score percentage
     const scorePercentage = (score / quizData.length) * 100;
 
     // Set the text of the score paragraph element
     const scoreText = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
-    document.getElementById('score').textContent = scoreText;
+    scoreText.textContent = scoreText;
 
     // Set the src attribute of the final image
     const finalImageSrc = 'final-image.jpg'; // Set the source of your final image here
-    document.getElementById('final-image').src = finalImageSrc;
+    finalImage.src = finalImageSrc;
 
     // Show the score panel
-    document.getElementById('score-panel').style.display = 'block';
+    scorePanel.style.display = 'block';
 
     // Show the play again button
-    document.getElementById('play-again-button').style.display = 'block';
+    playAgainButton.style.display = 'block';
 }
 
 
@@ -186,13 +193,13 @@ function restartQuiz() {
     displayQuestion();
 
     // Hide the score panel
-    document.getElementById('score-panel').style.display = 'none';
+    scorePanel.style.display = 'none';
 
     // Show the progress bar
-    document.getElementById('progress-bar').style.display = 'block';
+    progressBar.style.display = 'block';
 
     // Hide the play again button
-    document.getElementById('play-again-button').style.display = 'none';
+    playAgainButton.style.display = 'none';
 
     // Reset the container content
     questionContainer.style.display = 'block';
