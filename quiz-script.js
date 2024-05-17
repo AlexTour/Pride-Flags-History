@@ -163,8 +163,8 @@ function nextQuestion() {
 }
 
 function showScore() {
-     // Hide the question container
-    questionContainer.style.display = "none";
+     // Hide the result panel
+    resultPanel.style.display = "none";
     
     // Calculate the score percentage
     const scorePercentage = (score / quizData.length) * 100;
