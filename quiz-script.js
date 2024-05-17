@@ -145,20 +145,21 @@ function nextQuestion() {
     // Check if there are more questions
     if (currentQuestion < quizData.length) {
         displayQuestion();
+        // Show the question container
+        questionContainer.style.display = "block";
+
+        // Hide the result panel
+        resultPanel.style.display = "none";
+
+        // Hide the 'Next' button for showing next question
+        nextButton.style.display = "none";
+        nextResultButton.style.display = "block";
     } else {
+        nextButton.style.display = "none";
+        nextResultButton.style.display = "none";
         // Quiz completed, show final score
         showScore();
     }
-
-    // Show the question container
-    questionContainer.style.display = "block";
-
-    // Hide the result panel
-    resultPanel.style.display = "none";
-
-    // Hide the 'Next' button for showing next question
-    nextButton.style.display = "none";
-    nextResultButton.style.display = "block";
 }
 
 function showScore() {
