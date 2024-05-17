@@ -31,7 +31,6 @@ h1, h2 {
 }
 
 .quiz-question {
-    margin-bottom: 20px;
     padding: 5px;
     font-size: 16px;
     background: rgba(255, 255, 255, 0.2);
@@ -41,6 +40,7 @@ h1, h2 {
     -webkit-backdrop-filter: blur(4.4px);
     border: 1px solid rgba(255, 255, 255, 0.39);
     padding: 20px 40px;
+    margin: 40px;
 }
 
 .title {
@@ -197,7 +197,7 @@ footer{
 }
 .results {
     display: block;
-    margin-bottom: 20px;
+    margin: 40px;
     padding: 5px;
     font-size: 16px;
     background: rgba(255, 255, 255, 0.2);
