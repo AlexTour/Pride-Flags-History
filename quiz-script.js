@@ -7,7 +7,7 @@ const quizData = [
         info: "The original rainbow flag consists of six colors: red, orange, yellow, green, blue, and violet, symbolizing the diversity of the LGBTQ+ community."
     },
     {
-        question: "Which pride flag features five horizontal stripes in  pink, purple, and blue?",
+        question: "Which pride flag features three horizontal stripes in  pink, purple, and blue?",
         answers: ["Progress Pride Flag", "Bisexual Pride Flag", "Non-Binary Pride Flag"],
         correctAnswer: "Bisexual Pride Flag",
         imageUrl: "bisexual.jpg",
@@ -19,27 +19,6 @@ const quizData = [
         correctAnswer: "Progress Pride Flag",
         imageUrl: "Intersex-inclusive-pride-flag.jpg",
         info: "The Progress Pride Flag is an updated version of the traditional rainbow flag. It features nine horizontal stripes in the colors pink, red, orange, yellow, green, blue, purple, black, and brown. The additional black and brown stripes are meant to represent marginalized LGBTQ+ communities of color and those living with HIV/AIDS, while the white, pink, and blue stripes represent transgender individuals, non-binary individuals, and those who are intersex."
-    },
-    {
-        question: "Which pride flag consists of five horizontal stripes in shades of pink, purple, and blue, with a pink triangle at the left?",
-        answers: ["Lesbian Pride Flag", "Bisexual Pride Flag", "Transgender Pride Flag"],
-        correctAnswer: "Lesbian Pride Flag",
-        imageUrl: "lesbian.jpg",
-        info: "The Lesbian Pride Flag consists of five horizontal stripes in shades of pink, purple, and blue, with a pink triangle at the left. It represents love and attraction among women."
-    },
-    {
-        question: "Which pride flag is designed with a rainbow gradient and includes a chevron shape?",
-        answers: ["Inclusive Pride Flag", "Progress Pride Flag", "Non-Binary Pride Flag"],
-        correctAnswer: "Inclusive Pride Flag",
-        imageUrl: "Intersex-inclusive-pride-flag.jpg",
-        info: "The Inclusive Pride Flag is designed with a rainbow gradient and includes a chevron shape at the bottom, representing forward progress and inclusivity within the LGBTQ+ community."
-    },
-    {
-        question: "Which pride flag features a black background with a large gray ace in the center, surrounded by four horizontal stripes?",
-        answers: ["Asexual Pride Flag", "Pansexual Pride Flag", "Genderqueer Pride Flag"],
-        correctAnswer: "Asexual Pride Flag",
-        imageUrl: "asexual.png",
-        info: "The Asexual Pride Flag features a black background with a large gray ace (a symbol of asexuality) in the center, surrounded by four horizontal stripes. The top stripe is purple, representing community; the second stripe is gray, representing gray-asexuality and demisexuality; the third stripe is white, representing sexuality; and the bottom stripe is black, representing asexuality."
     },
     {
         question: "Which pride flag consists of three horizontal stripes in pink, blue, and lavender?",
@@ -54,13 +33,6 @@ const quizData = [
         correctAnswer: "Transgender Pride Flag",
         imageUrl: "transgender.jpg",
         info: "The Transgender Pride Flag features pink, white, and cyan horizontal stripes. The pink stripe represents femininity, the blue stripe represents masculinity, and the white stripe represents non-binary or intersex individuals."
-    },
-    {
-        question: "Which pride flag is designed with horizontal stripes in shades of brown and black, with a pink stripe at the top?",
-        answers: ["Lesbian Pride Flag", "Transgender Pride Flag", "Progress Pride Flag"],
-        correctAnswer: "Lesbian Pride Flag",
-        imageUrl: "lesbian.jpg",
-        info: "The Lesbian Pride Flag is designed with horizontal stripes in shades of brown and black, with a pink stripe at the top. The flag represents the diverse experiences and identities of lesbians around the world."
     },
     {
         question: "Which pride flag is designed with horizontal stripes in pink, purple, blue, green, yellow, orange, and red?",
