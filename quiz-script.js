@@ -8,7 +8,7 @@ const quizData = [
     },
     {
         question: "Which pride flag features three horizontal stripes in  pink, purple, and blue?",
-        answers: ["Progress Pride Flag", "Bisexual Pride Flag", "Non-Binary Pride Flag"],
+        answers: ["Pansexual Pride Flag", "Bisexual Pride Flag", "Asexual Pride Flag"],
         correctAnswer: "Bisexual Pride Flag",
         imageUrl: "bisexual.jpg",
         info: "The Bisexual Pride Flag features three horizontal stripes in shades of pink, purple, and blue. Blue stripe represents opposite-sex attraction, pink stripe represents same-sex attraction and the purple stripe represents the attraction to both sexes, symbolizing bisexuality."
