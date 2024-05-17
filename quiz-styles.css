@@ -127,6 +127,11 @@ button:hover {
     .footerBottom p{
       color: blueviolet;
     }
+
+    .additional-info {
+      overflow: auto;
+      height: 160px;
+    }
 }
 
 @media only screen and (min-width: 667px) {
