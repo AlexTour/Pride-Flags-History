@@ -14,13 +14,6 @@ const quizData = [
         info: "The 6-Color Pride Flag is one of the most well-known and used LGBT flags throughout history. Hot pink wasn´t included because the fabric was hard to find. In 1979, Gilbert Baker dropped the turquoise stripe, creating the most well-known pride flag."
     },
     {
-        question: "Which pride flag features three horizontal stripes in  pink, purple, and blue?",
-        answers: ["Pansexual Pride Flag", "Bisexual Pride Flag", "Asexual Pride Flag"],
-        correctAnswer: "Bisexual Pride Flag",
-        imageUrl: "bisexual.jpg",
-        info: "The Bisexual Pride Flag features three horizontal stripes in shades of blue, purple and pink. Blue is for opposite-sex attraction. Pink is for same-sex attraction. Purple is for attraction to both sexes."
-    },
-    {
         question: "The Human Rights Campaign released a version of the Progress Pride Flag in 2021. How many total stripes does this version of the flag have?",
         answers: ["Nine", "Eleven", "Thirteen"],
         correctAnswer: "Eleven",
@@ -28,15 +21,22 @@ const quizData = [
         info: "The Progress Pride Flag is an updated version of the traditional rainbow flag. The additional black and brown stripes represent marginalized LGBTQ+ communities of colour and those living with HIV/AIDS while the white, pink, and blue stripes represent transgender individuals, non-binary individuals, and those who are intersex."
     },
     {
+        question: "Which pride flag features three horizontal stripes in  pink, purple, and blue?",
+        answers: ["Pansexual Pride Flag", "Bisexual Pride Flag", "Asexual Pride Flag"],
+        correctAnswer: "Bisexual Pride Flag",
+        imageUrl: "bisexual.jpg",
+        info: "The Bisexual Pride Flag features three horizontal stripes in shades of blue, purple and pink. Blue is for opposite-sex attraction. Pink is for same-sex attraction. Purple is for attraction to both sexes."
+    },
+    {
         question: "Which pride flag consists of three horizontal stripes in pink, blue, and yellow?",
-        answers: ["Pansexual Pride Flag", "Genderqueer Pride Flag", "Progress Pride Flag"],
+        answers: ["Pansexual Pride Flag", "Genderqueer Pride Flag", "Bisexual Pride Flag"],
         correctAnswer: "Pansexual Pride Flag",
         imageUrl: "pansexual.jpg",
         info: "The Pansexual Pride Flag consists of three horizontal stripes in pink, blue, and yellow. Pink is for attraction to women. Blue is for attraction to men. Yellow is for attraction to those who don’t identify with either gender."
     },
     {
         question: "Which pride flag features horizontal stripes in pink, white, and cyan?",
-        answers: ["Non-Binary Pride Flag", "Transgender Pride Flag", "Intersex Pride Flag"],
+        answers: ["Bisexual Pride Flag", "Transgender Pride Flag", "Intersex Pride Flag"],
         correctAnswer: "Transgender Pride Flag",
         imageUrl: "transgender.jpg",
         info: "The Transgender Pride Flag features pink, white, and cyan horizontal stripes. Pink is for femininity. Blue is for masculinity. White is for non-binary or intersex individuals."
