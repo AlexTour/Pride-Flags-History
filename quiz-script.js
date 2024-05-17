@@ -8,7 +8,7 @@ const quizData = [
     },
     {
         question: "How many colours are there in the original rainbow flag?",
-        answers: ["Six", "Seven", "Eight"],
+        answers: ["Six", "Eight", "Nine"],
         correctAnswer: "Six",
         imageUrl: "Color-Pride-Flag.jpg",
         info: "The 6-Color Pride Flag is one of the most well-known and used LGBT flags throughout history. Hot pink wasn´t included because the fabric was hard to find. In 1979, Gilbert Baker dropped the turquoise stripe, creating the most well-known pride flag."
