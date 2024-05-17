@@ -171,6 +171,9 @@ function showScore() {
 
     // Show the score panel
     document.getElementById('score-panel').style.display = 'block';
+
+    // Show the play again button
+    document.getElementById('play-again-button').style.display = 'block';
 }
 
 
