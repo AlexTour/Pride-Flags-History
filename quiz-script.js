@@ -143,16 +143,7 @@ function nextQuestion() {
         displayQuestion();
     } else {
         // Quiz completed, show final score
-        const scorePercentage = (score / quizData.length) * 100;
-        const scoreText = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
-        questionContainer.innerHTML += `<div id="score-panel"><h2>${scoreText}</h2><img src="final-image.jpg" alt="Final Image"></div>`;
-        document.getElementById('progress-bar').style.display = 'none';
-        
-        // Show play again button
-        document.getElementById('play-again-button').style.display = 'block';
-        
-        // Reset currentQuestion to 0 for the next quiz
-        currentQuestion = 0;
+        showScore();
     }
 
     // Show the question container
@@ -167,11 +158,21 @@ function nextQuestion() {
 }
 
 function showScore() {
+    // Calculate the score percentage
     const scorePercentage = (score / quizData.length) * 100;
-    scoreText.textContent = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
-    scorePanel.style.display = "block";
-    progressBar.style.display = "none";
+
+    // Set the text of the score paragraph element
+    const scoreText = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
+    document.getElementById('score').textContent = scoreText;
+
+    // Set the src attribute of the final image
+    const finalImageSrc = 'final-image.jpg'; // Set the source of your final image here
+    document.getElementById('final-image').src = finalImageSrc;
+
+    // Show the score panel
+    document.getElementById('score-panel').style.display = 'block';
 }
+
 
 function restartQuiz() {
     // Reset variables
