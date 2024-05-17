@@ -1,5 +1,12 @@
 const quizData = [
     {
+        question: "The original Rainbow Pride Flag, designed by Gilbert Baker in 1978, had how many colors?",
+        answers: ["Four", "Eight", "Twelve"],
+        correctAnswer: "Eight",
+        imageUrl: "Gilbert-1.jpg",
+        info: "The original rainbow flag consists of six colors: red, orange, yellow, green, blue, and violet, symbolizing the diversity of the LGBTQ+ community."
+    },
+    {
         question: "How many colors are there in the original rainbow flag?",
         answers: ["Six", "Seven", "Eight"],
         correctAnswer: "Six",
@@ -21,11 +28,11 @@ const quizData = [
         info: "The Progress Pride Flag is an updated version of the traditional rainbow flag. It features nine horizontal stripes in the colors pink, red, orange, yellow, green, blue, purple, black, and brown. The additional black and brown stripes are meant to represent marginalized LGBTQ+ communities of color and those living with HIV/AIDS, while the white, pink, and blue stripes represent transgender individuals, non-binary individuals, and those who are intersex."
     },
     {
-        question: "Which pride flag consists of three horizontal stripes in pink, blue, and lavender?",
+        question: "Which pride flag consists of three horizontal stripes in pink, blue, and yellow?",
         answers: ["Pansexual Pride Flag", "Genderqueer Pride Flag", "Progress Pride Flag"],
         correctAnswer: "Pansexual Pride Flag",
         imageUrl: "pansexual.jpg",
-        info: "The Pansexual Pride Flag consists of three horizontal stripes in pink, blue, and lavender. The pink stripe represents attraction to females, the blue stripe represents attraction to males, and the lavender stripe represents attraction to individuals regardless of gender or sex."
+        info: "The Pansexual Pride Flag consists of three horizontal stripes in pink, blue, and yellow. The pink on the flag represents attraction to women, blue represents attraction to men, and yellow stands for attraction to those who don’t identify with either gender."
     },
     {
         question: "Which pride flag features horizontal stripes in pink, white, and cyan?",
