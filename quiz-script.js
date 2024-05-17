@@ -25,7 +25,7 @@ const quizData = [
         answers: ["Nine", "Eleven", "Thirteen"],
         correctAnswer: "Eleven",
         imageUrl: "Intersex-inclusive-pride-flag.jpg",
-        info: "The Progress Pride Flag is an updated version of the traditional rainbow flag. The additional black and brown stripes are meant to represent marginalized LGBTQ+ communities of colour and those living with HIV/AIDS, while the white, pink, and blue stripes represent transgender individuals, non-binary individuals, and those who are intersex."
+        info: "The Progress Pride Flag is an updated version of the traditional rainbow flag. The additional black and brown stripes represent marginalized LGBTQ+ communities of colour and those living with HIV/AIDS while the white, pink, and blue stripes represent transgender individuals, non-binary individuals, and those who are intersex."
     },
     {
         question: "Which pride flag consists of three horizontal stripes in pink, blue, and yellow?",
