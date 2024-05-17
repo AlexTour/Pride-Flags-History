@@ -1,6 +1,6 @@
 const quizData = [
     {
-        question: "The original Rainbow Pride Flag, designed by Gilbert Baker in 1978, had how many colors?",
+        question: "How many colours are there in the first Rainbow Pride Flag, designed by Gilbert Baker in 1978?",
         answers: ["Six", "Eight", "Twelve"],
         correctAnswer: "Eight",
         imageUrl: "Gilbert-1.jpg",
@@ -21,11 +21,11 @@ const quizData = [
         info: "The Bisexual Pride Flag features three horizontal stripes in shades of blue, purple and pink. Blue is for opposite-sex attraction. Pink is for same-sex attraction. Purple is for attraction to both sexes."
     },
     {
-        question: "Which pride flag consists of nine horizontal stripes in pink, purple, blue, green, yellow, orange, red, brown, and black?",
-        answers: ["Non-Binary Pride Flag", "Progress Pride Flag", "Pansexual Pride Flag"],
-        correctAnswer: "Progress Pride Flag",
+        question: "The Human Rights Campaign released a version of the Progress Pride Flag in 2021. How many total stripes does this version of the flag have?",
+        answers: ["Nine", "Eleven", "Thirteen"],
+        correctAnswer: "Eleven",
         imageUrl: "Intersex-inclusive-pride-flag.jpg",
-        info: "The Progress Pride Flag is an updated version of the traditional rainbow flag. It features nine horizontal stripes in pink, red, orange, yellow, green, blue, purple, black, and brown. The additional black and brown stripes are meant to represent marginalized LGBTQ+ communities of color and those living with HIV/AIDS, while the white, pink, and blue stripes represent transgender individuals, non-binary individuals, and those who are intersex."
+        info: "The Progress Pride Flag is an updated version of the traditional rainbow flag. The additional black and brown stripes are meant to represent marginalized LGBTQ+ communities of colour and those living with HIV/AIDS, while the white, pink, and blue stripes represent transgender individuals, non-binary individuals, and those who are intersex."
     },
     {
         question: "Which pride flag consists of three horizontal stripes in pink, blue, and yellow?",
@@ -42,11 +42,11 @@ const quizData = [
         info: "The Transgender Pride Flag features pink, white, and cyan horizontal stripes. Pink is for femininity. Blue is for masculinity. White is for non-binary or intersex individuals."
     },
     {
-        question: "Which pride flag is designed with horizontal stripes in pink, purple, blue, green, yellow, orange, and red?",
-        answers: ["Inclusive Pride Flag", "Progress Pride Flag", "Aromantic Pride Flag"],
-        correctAnswer: "Inclusive Pride Flag",
-        imageUrl: "Intersex-inclusive-pride-flag.jpg",
-        info: "The Inclusive Pride Flag is designed with horizontal stripes in pink, purple, blue, green, yellow, orange, and red. The flag represents the diversity and inclusivity of the LGBTQ+ community, with each color symbolizing different identities and experiences."
+        question: "The asexual pride flag features four horizontal stripes. What color appears at the top of the flag?",
+        answers: ["Pink", "Black", "Blue"],
+        correctAnswer: "Black",
+        imageUrl: "Asexual_Pride_Flag copy.jpg",
+        info: "Black stands for asexuality. Gray represents demisexuality, for those who develop sexual attraction to someone only after forming a deep emotional bond with them. White stands for the allies of the community. Purple represents the entire community of asexual folks."
     }
 ];
 
