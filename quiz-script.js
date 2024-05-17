@@ -151,10 +151,6 @@ function showScore() {
     const scoreMessage = `Your score: ${score} out of ${quizData.length} (${scorePercentage.toFixed(2)}%)`;
     scoreText.textContent = scoreMessage;
 
-    // Set the src attribute of the final image
-    const finalImageSrc = 'final-image.jpg'; // Set the source of your final image here
-    finalImage.src = finalImageSrc;
-
     // Show the score panel
     scorePanel.style.display = 'block';
 
