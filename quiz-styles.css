@@ -9,6 +9,18 @@ body {
   font-family: sans-serif;
 }
 
+/* Disable blue highlight on button click */
+button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* You can do the same for links */
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .container {
     max-width: 600px;
     margin: 0 auto;
