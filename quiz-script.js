@@ -11,7 +11,7 @@ const quizData = [
         answers: ["Six", "Seven", "Eight"],
         correctAnswer: "Six",
         imageUrl: "Color-Pride-Flag.jpg",
-        info: "The 6-Color Pride Flag is one of the most well-known and used LGBT flags throughout history. Hot pink wasn´t included because the fabric was hard to find.<br>In 1979, Gilbert Baker dropped the turquoise stripe, creating the most well-known pride flag."
+        info: "The 6-Color Pride Flag is one of the most well-known and used LGBT flags throughout history. Hot pink wasn´t included because the fabric was hard to find. In 1979, Gilbert Baker dropped the turquoise stripe, creating the most well-known pride flag."
     },
     {
         question: "Which pride flag features three horizontal stripes in  pink, purple, and blue?",
