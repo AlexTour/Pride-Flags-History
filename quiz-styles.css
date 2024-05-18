@@ -115,6 +115,7 @@ button:hover {
   animation-name: shake;
   animation-duration: 0.25s;
   animation-iteration-count: 5;
+  position: relative;
 }
 
 @keyframes shake {
