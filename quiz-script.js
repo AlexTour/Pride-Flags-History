@@ -101,8 +101,11 @@ function checkAnswer() {
         
         resultText.textContent = answer === currentQuestionData.correctAnswer ? "correct" : "incorrect";
         flagImage.src = currentQuestionData.imageUrl;
-        additionalInfo.textContent = currentQuestionData.info;
-        resultPanel.style.display = "block";
+               
+        flagImage.onload = () => {
+            additionalInfo.textContent = currentQuestionData.info;
+            resultPanel.style.display = "block";
+        };
 
         if (answer === currentQuestionData.correctAnswer) {
             score++;
