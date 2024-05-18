@@ -1,1 +1,1 @@
-document.getElementById('flag').src= "animated-flag.glb";
+document.getElementById('flag').src= "animated-flag2.glb";
