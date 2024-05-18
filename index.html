@@ -29,7 +29,7 @@
   <div class="title">History</div>
   <a href="quiz-index.html" class="quiz-button">Quiz</a>
   <div class="grid-container">
-    <model-viewer id="flag" src="animated-flag.glb" autoplay ar ar-modes="scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"></model-viewer>
+    <model-viewer id="flag" autoplay ar ar-modes="scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"></model-viewer>
     <div id="info-panel">
       <p id="variant-info">Select a flag to see more information.</p>
     </div>
@@ -112,6 +112,7 @@
   }
   </script>
   <script src="script.js"></script>
+  <script src="glbLoader.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </body>
